@@ -1,0 +1,32 @@
+.navbar {
+  background-color: var(--primary2);
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.menus {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  justify-content: space-between;
+  color: var(--black);
+}
+.menus > * {
+  padding: 1em;
+}
+.menus > * :hover {
+  cursor: pointer;
+  color: var(--primary2_dark);
+}
+.navIcons {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+.navIcons > * {
+  padding: 1em;
+  cursor: pointer;
+}

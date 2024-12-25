@@ -1,0 +1,45 @@
+.category_title {
+  font-size: 3rem;
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  color: var(--primary2_dark);
+  margin: 5rem 0;
+  letter-spacing: 2rem;
+}
+
+.category_container {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+.category_item {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.category_item:nth-child(even) {
+  justify-content: start;
+}
+.category_image {
+  object-fit: cover;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  max-height: 25rem;
+  max-width: 25rem;
+  aspect-ratio: 1 / 1;
+  /* flex: 1; */
+}
+.category_image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.vertical_text {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}

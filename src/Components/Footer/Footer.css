@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 5rem;
+  background-color: var(--primary2);
+  line-height: 2;
+}
+
+.hr_line {
+  width: 2px;
+  height: 6rem;
+  background-color: black;
+}

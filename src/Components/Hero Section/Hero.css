@@ -1,0 +1,41 @@
+.hero-page {
+  display: flex;
+  font-family: "Alegreya", serif;
+  height: 85vh;
+}
+.hero-img {
+  flex: 1;
+}
+.hero-img > img {
+  padding: 1rem;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  flex: 2;
+}
+.hero-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 3rem;
+}
+.hero-caption {
+  color: var(--primary1_dark);
+  font-size: 1.5rem;
+}
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--primary2_dark);
+  text-wrap: wrap;
+}
+.hero-content > button {
+  padding: 0.75em 1.5em;
+  font-size: 1.2rem;
+  color: var(--primary1_dark);
+  border: none;
+  border-radius: 0;
+  background-color: var(--primary1);
+  cursor: pointer;
+  align-self: start;
+}
