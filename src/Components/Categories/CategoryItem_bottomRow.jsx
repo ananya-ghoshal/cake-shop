@@ -6,6 +6,9 @@ function CategoryItem_bottomRow({ props }) {
     <div className="category_item">
       <Link to={props.path}>
         <img src={props.img} alt="props.img" className="category_image" />
+        <p className="textOverImg" style={{ display: "none" }}>
+          Click to order
+        </p>
       </Link>
       <span className="vertical_text">{props.name}</span>
     </div>

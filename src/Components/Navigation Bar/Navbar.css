@@ -1,10 +1,13 @@
+.topbar {
+  height: 7rem;
+  position: sticky;
+  top: 0;
+}
 .navbar {
   background-color: var(--primary2);
   height: 5rem;
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
 }
 .menus {
   display: flex;
@@ -29,4 +32,42 @@
 .navIcons > * {
   padding: 1em;
   cursor: pointer;
+}
+
+.subNav {
+  background-color: var(--primary2_dark);
+  height: 2rem;
+  display: flex;
+  padding: 0.5em 1.5em;
+  align-items: center;
+}
+/* Dropdwn menu styling */
+.dropdown {
+  position: relative;
+}
+.dropdown-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 1.15em;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+}
+
+.dropdown-item {
+  padding: 1em;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
 }

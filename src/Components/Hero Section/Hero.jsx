@@ -4,6 +4,7 @@ import HeroImg from "../../../assets/hero-cutout.png";
 import Hero_content from "./Hero_content";
 import Categories from "../Categories/Categories";
 import Navbar from "../Navigation Bar/Navbar";
+import Feedback from "../FeedbackCarousel.jsx/Feedback";
 
 function Hero() {
   const menuItems = {
@@ -19,6 +20,7 @@ function Hero() {
         <Hero_content />
       </div>
       <Categories />
+      <Feedback />
     </>
   );
 }

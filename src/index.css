@@ -7,8 +7,10 @@
   --primary1_medium: #e3e3e3;
   --primary1_dark: #5a5a4e;
   --primary2: #f6efef;
+  --primary2_light: #f8e2cf40;
   --primary2_dark: #d88181;
-  --black: #020202;
+  --primary2_darker: #6b3e3e;
+  --black_light: #393939;
 }
 * {
   box-sizing: border-box;

@@ -5,11 +5,11 @@ function Hero_content() {
   return (
     <div className="hero-content">
       <div className="hero-title">The Cake Shop</div>
-      <div className="hero-caption">Delight in every slice..</div>
-      <div className="hero-desc">
+      <p className="hero-caption">Delight in every slice..</p>
+      <p className="hero-desc">
         Discover a world of delectable creations, where every bite is a
         delightful celebration of sweetness.
-      </div>
+      </p>
       <button>Order Now</button>
     </div>
   );

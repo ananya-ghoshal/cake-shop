@@ -1,0 +1,33 @@
+.feedback_heading {
+  margin: 10rem 0 3rem 0;
+  font-size: 2rem;
+  font-family: "Lobster", sans-serif;
+  color: var(--black_light);
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel > button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.carousel > button > img {
+  padding: 2rem;
+}
+.feedbackItem {
+  display: flex;
+}
+.feedbackItem > img {
+  height: 8rem;
+  width: 8rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.feedbackDetails {
+  color: var(--primary1_dark);
+}
