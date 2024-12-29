@@ -1,9 +1,9 @@
 .hero-page {
   display: flex;
   font-family: "Alegreya", serif;
-  height: 55vh;
+  height: 65vh;
   gap: 6rem;
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 .hero-img {
   flex: 1;

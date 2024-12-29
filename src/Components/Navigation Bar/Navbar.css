@@ -1,11 +1,11 @@
 .topbar {
-  height: 7rem;
+  height: 6rem;
   position: sticky;
   top: 0;
 }
 .navbar {
   background-color: var(--primary2);
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -60,7 +60,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: white;
+  background-color: var(--primary2_light);
 }
 
 .dropdown-item {
@@ -69,5 +69,5 @@
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0;
+  background-color: white;
 }
