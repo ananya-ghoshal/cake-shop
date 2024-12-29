@@ -71,3 +71,65 @@
 .dropdown-item:hover {
   background-color: white;
 }
+
+/* LoginRegisterModal.css */
+.loginReg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background-color: var(--primary2);
+  padding: 5rem;
+  position: relative;
+  text-align: center;
+}
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  color: var(--primary2_dark);
+}
+
+.form_labels {
+  padding-bottom: 0.5rem;
+}
+.form_text {
+  padding-right: 0.5em;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1em;
+}
+
+form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: var(--primary2_dark);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+button[type="button"] {
+  background: none;
+  border: none;
+  color: var(--primary2_dark);
+  cursor: pointer;
+  text-decoration: underline;
+}

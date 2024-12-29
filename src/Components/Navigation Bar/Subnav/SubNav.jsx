@@ -1,5 +1,5 @@
 import Dropdown from "./Dropdown";
-import "./Navbar.css";
+import "../Navbar.css";
 
 import React from "react";
 

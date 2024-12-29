@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Menus from "./Menus";
 import NavIcons from "./NavIcons";
-import SubNav from "./SubNav";
+import SubNav from "./Subnav/SubNav";
 
 function Navbar({ menus }) {
   return (
