@@ -13,19 +13,27 @@ function Cupcakes() {
   const menuItems = {
     menu1: "Home",
   };
+  const cupcakes = [
+    { id: 1, img: PeachCupcake },
+    { id: 2, img: LemonCupcake },
+    { id: 3, img: ChocoCupcake },
+    { id: 4, img: HalloweenCupcake },
+    { id: 5, img: ChristmasCupcake },
+    { id: 6, img: RedCupcake },
+  ];
   return (
     <>
       <Navbar menus={menuItems} />
       <div className="cupcakes">
-        <CupcakeItems props={{ img: `${PeachCupcake}` }} />
-        <CupcakeItems props={{ img: `${LemonCupcake}` }} />
-        <CupcakeItems props={{ img: `${ChocoCupcake}` }} />
+        {cupcakes.slice(0, 3).map((cupcake) => (
+          <CupcakeItems key={cupcake.id} id={cupcake.id} img={cupcake.img} />
+        ))}
       </div>
       <div className="cupcakes_title">CUPCAKES</div>
       <div className="cupcakes">
-        <CupcakeItems props={{ img: `${HalloweenCupcake}` }} />
-        <CupcakeItems props={{ img: `${ChocoCupcake}` }} />
-        <CupcakeItems props={{ img: `${RedCupcake}` }} />
+        {cupcakes.slice(3).map((cupcake) => (
+          <CupcakeItems key={cupcake.id} id={cupcake.id} img={cupcake.img} />
+        ))}
       </div>
     </>
   );

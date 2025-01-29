@@ -1,26 +1,32 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import FavouriteIcon from "./Icons/favourites.svg";
+import FavouriteIcon from "./Icons/fav.svg";
 import ProfileIcon from "./Icons/profile.svg";
 import SearchIcon from "./Icons/search.svg";
 import BagIcon from "./Icons/shopping_bag.svg";
-import LoginRegisterModal from "./LoginRegisterModal";
+import LoginRegister from "./LoginRegister";
 
 function NavIcons() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
   const handleOnClick = () => {
-    setIsModalOpen(true);
+    setIsOpen(true);
   };
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const close = () => {
+    setIsOpen(false);
   };
   return (
     <div className="navIcons">
-      <img src={FavouriteIcon} alt="FavouriteIcon" />
-      <img src={ProfileIcon} alt="FavouriteIcon" onClick={handleOnClick} />
-      <img src={SearchIcon} alt="FavouriteIcon" />
-      <img src={BagIcon} alt="FavouriteIcon" />
-      {isModalOpen && <LoginRegisterModal onClose={closeModal} />}
+      <img
+        src={FavouriteIcon}
+        alt="FavouriteIcon"
+        onClick={() => navigate("/wishlist")}
+      />
+      <img src={ProfileIcon} alt="ProfileIcon" onClick={handleOnClick} />
+      <img src={SearchIcon} alt="SearchIcon" />
+      <img src={BagIcon} alt="BagIcon" onClick={() => navigate("/cart")} />
+      {isOpen && <LoginRegister onClose={close} />}
     </div>
   );
 }

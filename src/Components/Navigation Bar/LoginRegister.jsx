@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import App from "../../App";
 
-function LoginRegisterModal({ onClose }) {
+function LoginRegister({ onClose }) {
   const [isLogin, setisLogin] = useState(true);
   const switchToRegister = () => {
     setisLogin(false);
@@ -13,7 +12,7 @@ function LoginRegisterModal({ onClose }) {
 
   return (
     <div className="loginReg">
-      <div className="modal">
+      <div className="logInWindow">
         <button className="close-button" onClick={onClose}>
           x
         </button>
@@ -69,4 +68,4 @@ function LoginRegisterModal({ onClose }) {
   );
 }
 
-export default LoginRegisterModal;
+export default LoginRegister;

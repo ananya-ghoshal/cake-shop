@@ -1,0 +1,13 @@
+.wishlistItems {
+  display: flex;
+}
+.wishlistItem {
+  max-height: 16rem;
+  max-width: 16rem;
+  padding: 3rem;
+}
+.wishlistItem > img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
