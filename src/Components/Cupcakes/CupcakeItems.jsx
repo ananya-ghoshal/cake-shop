@@ -9,7 +9,7 @@ import {
 } from "../../Redux/actions/wishlistActions";
 import { addToBag, removeFromBag } from "../../Redux/actions/cartActions";
 
-function CupcakeItems({ id, img }) {
+function CupcakeItems({ id, img, name }) {
   const dispatch = useDispatch();
   const wishlist = useSelector((state) => state.wishlist.wishlist);
   const cart = useSelector((state) => state.cart.cart);
@@ -20,7 +20,7 @@ function CupcakeItems({ id, img }) {
     if (isWishlisted) {
       dispatch(removeFromWishlist(id));
     } else {
-      dispatch(addToWishlist({ id, img }));
+      dispatch(addToWishlist({ id, img, name }));
     }
   };
 
@@ -33,6 +33,7 @@ function CupcakeItems({ id, img }) {
   };
   return (
     <div className="cupcakeItems">
+      <div className="cupcake_name">{name}</div>
       <div className="cupcake_img">
         <img src={img} />
       </div>

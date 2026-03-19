@@ -14,25 +14,35 @@ function Cupcakes() {
     menu1: "Home",
   };
   const cupcakes = [
-    { id: 1, img: PeachCupcake },
-    { id: 2, img: LemonCupcake },
-    { id: 3, img: ChocoCupcake },
-    { id: 4, img: HalloweenCupcake },
-    { id: 5, img: ChristmasCupcake },
-    { id: 6, img: RedCupcake },
+    { id: 1, img: PeachCupcake, name: "Strawberry Kiss" },
+    { id: 2, img: LemonCupcake, name: "Lemon Zest" },
+    { id: 3, img: ChocoCupcake, name: "Chocolate Dream" },
+    { id: 4, img: HalloweenCupcake, name: "Halloween Spook" },
+    { id: 5, img: ChristmasCupcake, name: "Christmas Cheer" },
+    { id: 6, img: RedCupcake, name: "Red Velvet" },
   ];
   return (
     <>
       <Navbar menus={menuItems} />
       <div className="cupcakes">
         {cupcakes.slice(0, 3).map((cupcake) => (
-          <CupcakeItems key={cupcake.id} id={cupcake.id} img={cupcake.img} />
+          <CupcakeItems
+            key={cupcake.id}
+            id={cupcake.id}
+            img={cupcake.img}
+            name={cupcake.name}
+          />
         ))}
       </div>
       <div className="cupcakes_title">CUPCAKES</div>
       <div className="cupcakes">
         {cupcakes.slice(3).map((cupcake) => (
-          <CupcakeItems key={cupcake.id} id={cupcake.id} img={cupcake.img} />
+          <CupcakeItems
+            key={cupcake.id}
+            id={cupcake.id}
+            img={cupcake.img}
+            name={cupcake.name}
+          />
         ))}
       </div>
     </>
