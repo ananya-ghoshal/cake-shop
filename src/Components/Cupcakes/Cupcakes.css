@@ -26,6 +26,10 @@
 .cupcakeItems:nth-child(even) {
   background-color: var(--primary1_medium);
 }
+.cupcake_icons {
+  display: flex;
+  justify-content: space-between;
+}
 .cupcake_img > img {
   height: 100%;
   width: 100%;
